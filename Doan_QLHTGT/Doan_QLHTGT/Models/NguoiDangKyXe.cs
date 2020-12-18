@@ -15,6 +15,7 @@ namespace Doan_QLHTGT.Models
         public DateTime RegistrationDate { get; set; }
         public int Status { get; set; }
 
+        public virtual TaiKhoan TaiKhoan { get; set; }
         public virtual ICollection<Xe> Xes { get; set; }
     }
 }
