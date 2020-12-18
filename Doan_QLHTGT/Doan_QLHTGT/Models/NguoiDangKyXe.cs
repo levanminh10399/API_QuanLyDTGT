@@ -14,6 +14,7 @@ namespace Doan_QLHTGT.Models
         public String Address { get; set; }
         public DateTime RegistrationDate { get; set; }
         public int Status { get; set; }
+        public String IdentityCard { get; set; }
 
         public virtual ICollection<Xe> Xes { get; set; }
     }

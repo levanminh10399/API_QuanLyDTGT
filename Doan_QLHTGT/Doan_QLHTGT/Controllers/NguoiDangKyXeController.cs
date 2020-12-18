@@ -24,6 +24,11 @@ namespace Doan_QLHTGT.Controllers
             return ng.findById(id);
         }
 
+        public NguoiDangKyXe Get(string identityCard)
+        {
+            return ng.findByIdentityCard(identityCard);
+        }
+
         // POST api/values
         public void Post([FromBody]NguoiDangKyXe nguoiDangKyXe)
         {

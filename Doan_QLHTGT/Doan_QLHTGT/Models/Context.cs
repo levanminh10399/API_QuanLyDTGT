@@ -14,5 +14,6 @@ namespace Doan_QLHTGT.Models
         }
         public DbSet<NguoiDangKyXe> NguoiDangKyXes { get; set; }
         public DbSet<Xe> Xes { get; set; }
+        public DbSet<ViPham> ViPhams { get; set; }
     }
 }
