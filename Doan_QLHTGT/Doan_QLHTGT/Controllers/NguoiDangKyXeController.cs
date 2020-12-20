@@ -29,6 +29,11 @@ namespace Doan_QLHTGT.Controllers
         {
             ng.add(nguoiDangKyXe);
         }
+        //Get api/NguoiDangKy?identityCard= ""
+        public NguoiDangKyXe Get(string identityCard)
+        {
+            return ng.findByIdentityCard(identityCard);
+        }
 
         // PUT api/values/5
         public bool Put([FromBody]NguoiDangKyXe nguoiDangKy)

@@ -7,13 +7,13 @@ namespace Doan_QLHTGT.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class Give_it_a_name : IMigrationMetadata
+    public sealed partial class Initial : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Give_it_a_name));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial));
         
         string IMigrationMetadata.Id
         {
-            get { return "202012171631335_Give_it_a_name"; }
+            get { return "202012181644131_Initial"; }
         }
         
         string IMigrationMetadata.Source

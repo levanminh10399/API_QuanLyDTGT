@@ -16,6 +16,16 @@ namespace Doan_QLHTGT.Repository
                 return context.NguoiDangKyXes.ToList();
             }
         }
+        public NguoiDangKyXe findByIdentityCard(string identityCard)
+        {
+            NguoiDangKyXe nguoiDangKyXe = null;
+            using (var context = new Context())
+            {
+                nguoiDangKyXe = context.NguoiDangKyXes.Where(n => n.IdentityCard == identityCard).FirstOrDefault<NguoiDangKyXe>();
+            }
+            return nguoiDangKyXe;
+        }
+
         public NguoiDangKyXe findById(int id)
         {
             NguoiDangKyXe nguoiDangKyXe = null;

@@ -10,9 +10,11 @@ namespace Doan_QLHTGT.Models
     {
         public Context() : base(nameOrConnectionString: "DemoQLHTGTConnection")
         {
-
+            
         }
         public DbSet<NguoiDangKyXe> NguoiDangKyXes { get; set; }
         public DbSet<Xe> Xes { get; set; }
+        public DbSet<TaiKhoan> TaiKhoans { get; set; }
+        public DbSet<ViPham> ViPhams { get; set; }
     }
 }

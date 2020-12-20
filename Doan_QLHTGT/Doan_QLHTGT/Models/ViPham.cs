@@ -6,13 +6,13 @@ using System.Web;
 
 namespace Doan_QLHTGT.Models
 {
-    public class Xe
+    public class ViPham
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public string LoaiXe { get; set; }
-        public string BienSo { get; set; }   
-        public int ChuSoHuuId { get; set; }
-        public NguoiDangKyXe NguoiDangKyXe  {get;set;}  
+        public string NoiDung { get; set; }
+        public int TienPhat { get; set; }
+        public DateTime NgayViPham { get; set; }
+        public NguoiDangKyXe NguoiDangKyXe { get; set; }
     }
 }
